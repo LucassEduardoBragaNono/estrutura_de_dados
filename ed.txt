@@ -1,0 +1,69 @@
+array, listas, pilhas(filas, árvores e grafos)
+
+arrays -
+push(): add um ou mais elementos ao final de um array
+pop(): remove o ultimo
+shift(): remove o primeiro elemento
+unshift(): add um ou mais elementos no inicio de um array
+
+
+forEach é igual ao let i
+
+carros.forEach(num => {console.log(num);
+}); ou declarar um function ao invés da anonima {}
+
+let numeros = [1, 2 , 3 , 4];
+numeros.shift();
+console.log(numeros);
+
+let frutas = ['Banana', 'Laranja'];
+console.table(frutas);
+frutas.push('Manga');
+console.table(frutas);
+
+let carros = ['Fusca', 'Lamborguini', 'La besta'];
+console.table(carros);
+carros.unshift('Uno');
+console.table(carros);
+
+carros.pop();
+console.table(carros);
+
+carros.forEach(num => {console.log(num);
+});
+
+
+let matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+matriz.forEach(num => {console.log(num)});
+
+
+
+pilhas(stacks) - 
+segue o LIFO(Last in, First Out)
+
+push()
+pop()
+peek(): retorna o item no topo sem remove-lo
+isEmpty(): verifica se a pilha ta vazia
+
+filas(queues)
+segue o FIFO(First in, First Out)
+
+push()
+shift()
+enqueue(): adiciona um item ao final da filha
+dequeue(): remove " " " " " "
+
+let fila = [];
+fila.push(8);
+fila.push(2);
+let primeiro = console.log(fila.shift());
+
+
+ARRAYS - linear
+PILHAS - ultimo q entra, primeiro q sai
+FILA - fila né pae
