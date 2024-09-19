@@ -67,3 +67,21 @@ let primeiro = console.log(fila.shift());
 ARRAYS - linear
 PILHAS - ultimo q entra, primeiro q sai
 FILA - fila né pae
+
+
+exercicio 
+console.log(numPar());
+
+function somaDosPares(array){
+    let soma = 0;
+    array.forEach(num =>{
+        if(num % 2 === 0){
+        soma += num;
+        }
+    });
+    
+    return soma;
+    }
+    
+    let numeross = [1,2,3,4,5,6,7,8,9,10]
+    console.log(somaDosPares((numeross)));
