@@ -1,0 +1,31 @@
+let acoesFeitas = ['Copiar', 'Colar'];
+
+function adicionarAcao() {
+    let acao = prompt("Ação: ");
+    if (acao) {
+        acoesFeitas.push(acao);
+        console.log("Ação concluída");
+    } else {
+        console.log("Nenhuma ação foi concluída");
+    }
+}
+
+function removerAcao() {
+    if (acoesFeitas.length > 0) {
+        let ultimaPosicao = acoesFeitas.pop();
+        console.log("Última ação removida com sucesso!");
+        console.log("A última ação concluída foi: " + ultimaPosicao);
+    } else {
+        console.log("Não há ações para remover.");
+    }
+}
+
+let resp = prompt("Deseja adicionar uma ação? (s/n)").toLowerCase();
+
+if (resp === 's') {
+    adicionarAcao();
+} else if (resp === 'n') {
+    removerAcao();
+} else {
+    console.log("Resposta inválida");
+}
