@@ -29,3 +29,39 @@ if (resp === 's') {
 } else {
     console.log("Resposta inválida");
 }
+
+
+
+//ex2
+
+let filaImpressora = [];
+
+function imprimir()
+{;
+    let req = prompt("O que será impresso?")
+    if(req){
+        filaImpressora.push();
+        console.table(filaImpressora[0])
+        console.log("Requerimento realizado, aguarde a fila.");
+    } else {
+        console.log("Ocorreu um erro.");
+    }
+}
+
+function realizarImpressao()
+{
+    filaImpressora.shift();
+    console.log("A impressão do item 1, posição 0, foi concluída com sucesso");
+}
+
+
+let op = prompt("Deseja requerir uma impressão? (s/n)");
+let op2 = prompt("Deseja realizar uma impressão? (s/n)");
+if(op = 's'){
+    imprimir()
+} else if(op2 = 's'){
+    console.log("Item que será impresso" + filaImpressora[0]);
+    realizarImpressao()
+} else {
+    console.log("Nada foi requerido nem impresso.");
+}
